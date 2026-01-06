@@ -68,24 +68,9 @@ You can use this prompt with any AI coding assistant (Claude, GitHub Copilot, Cu
 
 ### Basic Workflow
 
-1. **Provide the prompt** to your AI assistant in your project directory (see [prompt.md](prompt.md) for the full prompt):
-
-   ```text
-   Create setup instructions for this project following a three-phase approach:
-
-   Phase 1 (Research): Analyze the project structure, dependencies, and requirements.
-   Create research.md documenting findings and wait for my approval.
-
-   Phase 2 (Plan): Generate a detailed execution plan with numbered tasks, success
-   criteria, and verification methods. Create plan.md and wait for my approval.
-
-   Phase 3 (Execute): Generate agent-instructions.md with executable installation
-   steps and human_tasks.md for manual interventions.
-   ```
+1. **Provide the prompt** to your AI assistant in your project directory (see [prompt.md](prompt.md) for the full prompt)
 
 2. **Follow the three phases**:
-   - Review `research.md` and approve to continue
-   - Review `plan.md` and approve to continue
    - Review the generated `agent-instructions.md`
 
 3. **Use the instructions** with any AI assistant:
@@ -93,19 +78,6 @@ You can use this prompt with any AI coding assistant (Claude, GitHub Copilot, Cu
    ```text
    Follow the instructions in agent-instructions.md to set up this project
    ```
-
-### Alternative: Quick Generation
-
-If you prefer to skip the phased approach:
-
-```text
-Generate agent-instructions.md for this project with:
-- Discrete, verifiable installation tasks
-- Success criteria for each step
-- Automated environment detection
-- Consolidated manual input requirements upfront
-- Rollback strategies for failed operations
-```
 
 ## Bonus: AI Agent Skill Setup
 
@@ -164,7 +136,6 @@ Generate agent-instructions.md for this project
 | ------------------------- | ----------------------------------------------------- |
 | `research.md`             | Phase 1 findings, requirements, and ambiguities       |
 | `plan.md`                 | Phase 2 detailed task breakdown and execution plan    |
-| `agent-instructions.md`   | Final AI-executable installation guide                |
 | `human_tasks.md`          | Manual tasks requiring human intervention             |
 
 ## Example Output
@@ -197,6 +168,12 @@ Contributions welcome! Please:
 ## License
 
 MIT License - see [LICENSE](LICENSE) file for details
+
+## Maintainer
+
+This project is maintained by [Montimage](https://montimage.eu).
+
+For questions or support, contact: developer@montimage.eu
 
 ## Support
 
