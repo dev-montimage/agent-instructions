@@ -1,5 +1,7 @@
 # Agent Instructions Generator
 
+**Stop explaining setup to AI agents. Generate machine-executable instructions instead.**
+
 Generate comprehensive, AI-agent-friendly installation and setup instructions for any project.
 
 ## The Problem
