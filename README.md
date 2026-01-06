@@ -54,12 +54,11 @@ The skill follows a structured three-phase approach with user approval gates:
 
 ### Phase 3: Execute
 
-**Goal**: Generate the final instructions
+**Goal**: Execute the plan
 
 - Follows the approved plan sequentially
 - Verifies each step's success before proceeding
 - Stops immediately on failures and reports to user
-- Creates `agent-instructions.md` with executable instructions
 - Generates `human_tasks.md` for manual interventions
 
 ## Usage
